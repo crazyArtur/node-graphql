@@ -1,4 +1,4 @@
-function feed(parent, args, context, info) {
+async function feed(parent, args, context, info) {
     const where = args.filter ? {
         OR: [
             { description_contains: args.filter },
